@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KayyPediaID | Portofolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>" />
+  <meta name="description" content="KayyPediaID - Full-Stack Developer. Building clean, modern, and user-friendly interfaces." />
+  <meta property="og:title" content="KayyPediaID | Portofolio" />
+  <meta property="og:description" content="Full-Stack Developer who crafts clean, modern, and user-friendly interfaces." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-spinner"></div>
+    <p>Loading...</p>
+  </div>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">KayyPediaID<span>.</span></div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact" class="btn btn-primary btn-small">Contact</a></li>
+          <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-code"></i> Available for freelance
+          </div>
+          <h1 class="hero-title">
+            I'm KayyPediaID,<br />
+            <span class="hero-typing"></span>
+          </h1>
+          <p class="hero-desc">
+            A full-stack developer who crafts clean, modern, and user-friendly interfaces.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stats-item">
+              <strong class="counter" data-target="5">0</strong><span>+</span>
+              <span>Years Experience</span>
+            </div>
+            <div class="hero-stats-item">
+              <strong class="counter" data-target="12">0</strong>
+              <span>Projects Delivered</span>
+            </div>
+            <div class="hero-stats-item">
+              <strong class="counter" data-target="8">0</strong>
+              <span>Happy Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="avatar">
+            <i class="fas fa-user-astronaut"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="services-header">
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">I build things that live on the internet. From design to deployment.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Clean, responsive, and performance-focused websites using modern technologies.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>UI / UX Design</h3>
+          <p>Human-centered design that balances aesthetics with functionality and ease of use.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-server"></i></div>
+          <h3>Panel Management</h3>
+          <p>Pterodactyl configuration, theme installation, and server optimization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="skills-header">
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-subtitle">Technologies and tools I work with.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+        <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+        <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="skill-item"><i class="fas fa-server"></i><span>Bash</span></div>
+        <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="skill-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+        <div class="skill-item"><i class="fab fa-linux"></i><span>Linux</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Some of the things I've built recently.</p>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="panel">Panel</button>
+        <button class="filter-btn" data-filter="bot">Bot</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="panel">
+          <div class="project-image"><i class="fas fa-panel"></i></div>
+          <div class="project-info">
+            <h3>XCODE Installer</h3>
+            <p>Auto-installer for Pterodactyl themes with 7 language support.</p>
+            <div class="project-tags"><span>Bash</span><span>Linux</span></div>
+            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <div class="project-image"><i class="fas fa-cloud"></i></div>
+          <div class="project-info">
+            <h3>Hosting Landing</h3>
+            <p>Modern landing page design for hosting provider with clean UI.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="project-card" data-category="bot">
+          <div class="project-image"><i class="fas fa-robot"></i></div>
+          <div class="project-info">
+            <h3>Discord Bot</h3>
+            <p>Panel management bot for Pterodactyl with server control commands.</p>
+            <div class="project-tags"><span>Python</span><span>API</span></div>
+            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="container">
+      <div class="testimonials-header">
+        <h2 class="section-title">Kind Words</h2>
+        <p class="section-subtitle">What people say about working with me.</p>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonials-track">
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"KayyPediaID delivered a clean, modern landing page for our hosting service. Highly recommended!"</p>
+            <div class="testimonial-author"><strong>Alex Rivera</strong><span>Hosting Provider</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"The panel management script saved us hours of manual work. Truly a game-changer."</p>
+            <div class="testimonial-author"><strong>Sarah Chen</strong><span>Game Server Admin</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"KayyPediaID's attention to detail and fast delivery made our project a success. Will work again!"</p>
+            <div class="testimonial-author"><strong>Mike Johnson</strong><span>Startup Founder</span></div>
+          </div>
+        </div>
+        <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="slider-dots"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-content">
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-subtitle">Have a project in mind? Let's talk about it.</p>
+          <div class="contact-methods">
+            <div class="contact-item"><i class="fas fa-envelope"></i><span>kayypediaid@gmail.com</span></div>
+            <div class="contact-item"><i class="fab fa-github"></i><span>github.com/kayybitch</span></div>
+            <div class="contact-item"><i class="fab fa-telegram"></i><span>@qwecrty</span></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" id="userName" placeholder="Your Name" required />
+          <input type="email" id="userEmail" placeholder="Your Email" required />
+          <textarea rows="4" id="userMessage" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="social-floating">
+    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+  </div>
+
+  <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 KayyPediaID. Built with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
